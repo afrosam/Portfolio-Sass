@@ -1,0 +1,117 @@
+@include media-md {
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            transform: translateY(0);
+            height: 100%;
+            background: $primary-color;
+            text-align: right;
+            
+            &__item {
+                display: inline;
+                padding-right: 1.5rem;
+            }
+
+            &__link {
+                font-size: 1.5rem; 
+            }
+        }
+    }
+
+    .about__bio {
+        font-size: 1.25rem;
+    }
+
+    .projects {
+        &__bio-image {
+            height: 40vh;
+        }
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+
+    // in case I add more options for contact
+    // .contact__list {
+    //     //grid-template-columns: repeat(2, 1fr);
+    // }
+}
+
+@include media-lg {
+    .projects {
+
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+
+    .about {
+        &__bio-image {
+            background:
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.9),
+                rgba($primary-color, 0.3)
+            ),
+            url('../img/My_Image.jpg') center 27%;
+            background-size: cover;
+        }
+    }
+
+    .projects {
+        &__bio-image {
+            background:
+            linear-gradient(
+                to right,
+                rgba($primary-color, 0.9),
+                rgba($primary-color, 0.3)
+            ),
+            url('../img/My_Image.jpg') center 27%;
+            background-size: cover;
+        }
+    }
+
+    .about__bio {
+        font-size: 1.5rem;
+        width: 60vw;
+    }
+
+    .jobs {
+        &__job {
+            font-size: 1.25rem;
+        }
+    }
+
+    // in case I add more options for contacting later
+    // .contact__list {
+    //     //grid-template-columns: repeat(3, 1fr);
+    // }
+}
+
+@include media-xl {
+    .projects__bio-image {
+        height: 50vh;
+    }
+
+    .home {
+        background:
+        linear-gradient(
+            to right,
+            rgba($primary-color, 0.9),
+            rgba($primary-color, 0.3)
+        ),
+        url('../img/My_Image.jpg') center 30%;
+        background-size: cover;
+    }
+
+}
