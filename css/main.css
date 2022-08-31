@@ -17,7 +17,7 @@
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #1affff;
 }
 .home__name--last {
   color: cyan;
@@ -158,6 +158,7 @@
 .about__bio {
   width: 80%;
   text-align: center;
+  padding-top: 2rem;
   padding-bottom: 1rem;
 }
 .about__bio .text-secondary {
@@ -174,13 +175,14 @@
   grid-gap: 2rem;
 }
 .about .jobs__job {
-  background: #414141;
+  background: rgba(49, 53, 55, 0);
   padding: 0.5rem;
   border-bottom: 5px solid cyan;
   transition: all 0.5s ease-in-out;
 }
 .about .jobs__job:hover {
-  box-shadow: 0 0 5px 2px cyan;
+  box-shadow: inset 0 0 5px 2px cyan;
+  background-color: rgb(49, 53, 55);
 }
 .about .jobs__job h2, .about .jobs__job h3 {
   margin: 0.5rem, 0;
@@ -264,7 +266,7 @@
 }
 .projects__btn {
   opacity: 0;
-  color: #000;
+  color: rgb(29, 32, 33);
   transition: all 0.5s ease-in-out;
 }
 .projects__btn:hover {
@@ -345,8 +347,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .about__bio-image {
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/My_Image.jpg") center 27%;
-    background-size: cover;
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3));
   }
   .projects__bio-image {
     background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/My_Image.jpg") center 27%;
@@ -372,7 +373,8 @@
 body {
   background: #272727;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   font-family: "Inter", sans-serif;
   line-height: 1;
 }
