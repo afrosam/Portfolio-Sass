@@ -217,18 +217,19 @@
 .projects__bio {
   height: 12vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3));
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
 }
 .projects__bio .brief {
-  margin: auto 4em;
+  margin: 1em;
+  font-size: 1.1em;
 }
 .projects .text-secondary {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1em;
+  margin-top: 3em;
 }
 .projects__items {
   width: 60vw;
@@ -343,9 +344,6 @@
   .about__bio {
     font-size: 1.25rem;
   }
-  .projects__bio-image {
-    height: 40vh;
-  }
   .projects__items {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -363,9 +361,6 @@
   .about p {
     line-height: 2rem;
   }
-  .projects__bio {
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3));
-  }
   .about__bio {
     font-size: 1.5rem;
     width: 60vw;
@@ -375,9 +370,6 @@
   }
 }
 @media screen and (min-width: 1600px) {
-  .projects__bio {
-    height: 50vh;
-  }
   .home {
     background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/My_Image.jpg") center 30%;
     background-size: cover;
