@@ -33,7 +33,7 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2s linear;
 }
 .menu-btn__burger {
   position: absolute;
@@ -42,7 +42,7 @@
   width: 28px;
   height: 3px;
   background: #fff;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2s linear;
 }
 .menu-btn__burger::before {
   content: "";
@@ -51,7 +51,7 @@
   width: 28px;
   height: 3px;
   background: #fff;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2s linear;
 }
 .menu-btn__burger::after {
   content: "";
@@ -60,7 +60,7 @@
   width: 20px;
   height: 3px;
   background: #fff;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2s linear;
 }
 .menu-btn__burger.open {
   transform: rotate(720deg);
@@ -97,14 +97,14 @@
   list-style-type: none;
   padding-right: 1rem;
   transform: translateY(-100%);
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2s linear;
 }
 .nav .menu-nav.open {
   transform: translateY(0);
 }
 .nav .menu-nav__item {
   transform: translateX(100vw);
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2s linear;
 }
 .nav .menu-nav__item.open {
   transform: translateX(0);
@@ -118,7 +118,7 @@
   text-transform: uppercase;
   padding: 2rem 0;
   font-weight: 300;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2s linear;
 }
 .nav .menu-nav__link:hover {
   color: cyan;
@@ -141,6 +141,7 @@
 }
 
 .about {
+  padding-top: 2rem;
   padding-bottom: 2rem;
 }
 .about__bio-image {
@@ -154,7 +155,7 @@
 .about p {
   margin-bottom: 1rem;
   padding: 1rem;
-  line-height: 2rem;
+  line-height: 1.25rem;
 }
 .about__bio {
   width: 80%;
@@ -181,7 +182,8 @@
 .about .jobs__job {
   background: rgba(49, 53, 55, 0);
   padding: 0.5rem;
-  transition: all 0.35s ease-in-out;
+  border-radius: 5px;
+  transition: all 0.2s linear;
 }
 .about .jobs__job:hover {
   box-shadow: rgb(17, 17, 17) 0px 4px 5px 3px;
@@ -212,15 +214,17 @@
 .projects {
   padding-bottom: 2rem;
 }
-.projects__bio-image {
-  height: 30vh;
+.projects__bio {
+  height: 12vh;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/My_Image.jpg") center top;
-  background-size: cover;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3));
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+}
+.projects__bio .brief {
+  margin: auto 4em;
 }
 .projects .text-secondary {
   font-size: 2rem;
@@ -251,7 +255,7 @@
   width: 100%;
   background: cyan;
   opacity: 0;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2s linear;
 }
 .projects__item:hover::after {
   top: 0;
@@ -274,7 +278,7 @@
 .projects__btn {
   opacity: 0;
   color: rgb(29, 32, 33);
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2s linear;
 }
 .projects__btn:hover {
   color: #fff;
@@ -356,9 +360,11 @@
   .about__bio-image {
     background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3));
   }
-  .projects__bio-image {
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/My_Image.jpg") center 27%;
-    background-size: cover;
+  .about p {
+    line-height: 2rem;
+  }
+  .projects__bio {
+    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3));
   }
   .about__bio {
     font-size: 1.5rem;
@@ -369,7 +375,7 @@
   }
 }
 @media screen and (min-width: 1600px) {
-  .projects__bio-image {
+  .projects__bio {
     height: 50vh;
   }
   .home {
@@ -402,6 +408,10 @@ a {
   color: cyan;
 }
 
+.center-text {
+  text-align: center;
+}
+
 header {
   position: fixed;
   z-index: 2;
@@ -421,7 +431,7 @@ main .social-icons {
 }
 main .social-icons a {
   padding: 0.4rem;
-  transition: all 0.35s ease-in-out;
+  transition: all 0.2s linear;
 }
 main .social-icons a:hover {
   color: cyan;
