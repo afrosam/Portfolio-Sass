@@ -80,6 +80,7 @@
   width: 100vw;
   opacity: 0.98;
   visibility: hidden;
+  box-shadow: 0 0 15px 7px #111;
 }
 .nav.open {
   visibility: visible;
@@ -144,8 +145,6 @@
 .about__bio-image {
   height: auto;
   width: 100%;
-  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/My_Image.jpg") center top;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,6 +153,7 @@
 .about p {
   margin-bottom: 1rem;
   padding: 1rem;
+  line-height: 2rem;
 }
 .about__bio {
   width: 80%;
@@ -307,7 +307,6 @@
   .menu-btn {
     visibility: hidden;
   }
-
   .nav {
     visibility: visible;
   }
@@ -325,15 +324,12 @@
   .nav .menu-nav__link {
     font-size: 1.5rem;
   }
-
   .about__bio-image {
     margin-top: 5.5rem;
   }
-
   .about__bio {
     font-size: 1.25rem;
   }
-
   .projects__bio-image {
     height: 40vh;
   }
@@ -348,22 +344,18 @@
   .projects__items {
     grid-template-columns: repeat(3, 1fr);
   }
-
   .about__bio-image {
     background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/My_Image.jpg") center 27%;
     background-size: cover;
   }
-
   .projects__bio-image {
     background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/My_Image.jpg") center 27%;
     background-size: cover;
   }
-
   .about__bio {
     font-size: 1.5rem;
     width: 60vw;
   }
-
   .jobs__job {
     font-size: 1.25rem;
   }
@@ -372,7 +364,6 @@
   .projects__bio-image {
     height: 50vh;
   }
-
   .home {
     background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/My_Image.jpg") center 30%;
     background-size: cover;
@@ -382,7 +373,7 @@ body {
   background: #272727;
   color: #fff;
   height: 100vh;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1;
 }
 
