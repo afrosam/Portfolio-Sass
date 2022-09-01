@@ -371,12 +371,6 @@
     font-size: 1.15rem;
   }
 }
-@media screen and (min-width: 1600px) {
-  .home {
-    background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url("../img/My_Image.jpg") center 30%;
-    background-size: cover;
-  }
-}
 html, body {
   min-height: 100vh;
   height: auto;
