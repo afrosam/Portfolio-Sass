@@ -15,7 +15,7 @@
   background-size: cover;
 }
 .home__name {
-  font-size: 5rem;
+  font-size: 3rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   border-bottom: 2px solid #1affff;
@@ -356,6 +356,9 @@
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
+  }
+  .home__name {
+    font-size: 4rem;
   }
   .projects__items {
     grid-template-columns: repeat(3, 1fr);
